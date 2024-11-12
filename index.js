@@ -15,6 +15,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', async (req, res) => {
+    console.log('HELLO USER');
     try {
         await axios.post(process.env.SENDER_API_URL, {
             from: {
